@@ -1,0 +1,1564 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions xmlns="http://schemas.xmlsoap.org/wsdl/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:xsdLocal1="http://www.siebel.com/xml/CESA%20Student%20Outbound%20Interface%20IO"
+             targetNamespace="http://siebel.com/Student/Outbound/Update" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://siebel.com/Student/Outbound/Update" >
+    <types >
+        <xsd:schema elementFormDefault="qualified" attributeFormDefault="unqualified" xmlns:xsdLocal1="http://www.siebel.com/xml/CESA%20Student%20Outbound%20Interface%20IO" targetNamespace="
+http://www.siebel.com/xml/CESA%20Student%20Outbound%20Interface%20IO" xmlns:xsd="http://www.w3.org/2001/XMLSchema" >
+            <xsd:annotation >
+                <xsd:documentation >Copyright (C) 2001-2004 Siebel Systems, Inc. All rights reserved. Siebel XSD
+                    Generation</xsd:documentation >
+            </xsd:annotation >
+            <xsd:element name="CesaSchoolInterface" type="xsdLocal1:CesaSchoolInterface" />
+            <xsd:complexType name="CesaSchoolInterfaceTopElmt" >
+                <xsd:sequence >
+                    <xsd:element
+                            name="CesaSchoolInterface" maxOccurs="1" minOccurs="1" type="xsdLocal1:CesaSchoolInterface" >
+                    </xsd:element >
+                </xsd:sequence >
+            </xsd:complexType >
+            <xsd:complexType name="CesaSchoolInterface" >
+                <xsd:sequence >
+                    <xsd:element
+                            name="SISSchoolDEEWRCode" maxOccurs="1" minOccurs="0" type="xsd:string" >
+                    </xsd:element >
+                    <xsd:element name="ListOfCesaStudentOutboundInterface" maxOccurs="1" minOccurs="0" type="xsdLocal1:ListOfCesaStudentOutboundInterface" >
+                    </xsd:element >
+                </xsd:sequence >
+            </xsd:complexType >
+            <xsd:complexType name="ListOfCesaStudentOutboundInterface" >
+                <xsd:sequence >
+                    <xsd:element name="CesaStudentOutboundInterface" maxOccurs="unbounded" minOccurs="0"
+                                 type="xsdLocal1:CesaStudentOutboundInterface" />
+                </xsd:sequence >
+            </xsd:complexType >
+            <xsd:complexType name="CesaStudentOutboundInterface" >
+                <xsd:sequence >
+                    <xsd:element name="Alias" maxOccurs="1" minOccurs="0"
+                                 type="xsd:string" />
+                    <xsd:element name="CellularPhone" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="Citizenship" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="DateofBirth" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="EmailAddress" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="EmailAddress2"
+                                 maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="FirstName" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="LastName" maxOccurs="1" minOccurs="0" type="xsd:string" >
+                    </xsd:element >
+                    <xsd:element name="LeadContactType" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="MF" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="MiddleName"
+                                 maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="PartyTypeCode" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="PermenantResident" maxOccurs="1" minOccurs="0"
+                                 type="xsd:string" />
+                    <xsd:element name="PrimaryAccountName" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="PrivacyCode" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="SISAboriginal" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="SISAdultStudent" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="SISApplicantStatus"
+                                 maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="SISAttendsEthnicSchool" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="SISAusArrivalDate" maxOccurs="1" minOccurs="0"
+                                 type="xsd:string" />
+                    <xsd:element name="SISBoarding" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="SISCountryofBirth" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="SISCulturalBackground" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="SISDestinationSchool" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element
+                            name="SISExchangeStudent" maxOccurs="1" minOccurs="0" type="xsd:string" >
+                    </xsd:element >
+                    <xsd:element name="SISFTE" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="SISFirstenrolledAusSchoolDate"
+                                 maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="SISHomeStudent" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="SISLanguageStudied" maxOccurs="1" minOccurs="0"
+                                 type="xsd:string" />
+                    <xsd:element name="SISLockerID" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="SISMainLOTEatHome" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="SISMainLanguage" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="SISMovementDate" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="SISMovementNotes"
+                                 maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="SISMovementReason" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="SISMovementType" maxOccurs="1" minOccurs="0"
+                                 type="xsd:string" />
+                    <xsd:element name="SISOSFullFee" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="SISOtherLanguages" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="SISOtherNames" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="SISOtherReligion" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="SISPosinFam"
+                                 maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="SISPrevSchoolFrom" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="SISPrevSchoolTo" maxOccurs="1" minOccurs="0"
+                                 type="xsd:string" />
+                    <xsd:element name="SISPreviousSchool" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="SISReceiveAllowance" maxOccurs="1" minOccurs="0" type="xsd:string" >
+                    </xsd:element >
+                    <xsd:element name="SISReligion" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="SISSignedBirthCertificate" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element
+                            name="SISSilentNumber" maxOccurs="1" minOccurs="0" type="xsd:string" >
+                    </xsd:element >
+                    <xsd:element name="SISStudentEndDate" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="SISStudentType" maxOccurs="1"
+                                 minOccurs="0" type="xsd:string" />
+                    <xsd:element name="SISTorresStraitIslander" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="SISUsername" maxOccurs="1" minOccurs="0" type="xsd:string" >
+                    </xsd:element >
+                    <xsd:element name="SSN" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="SinceDate" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="Status" maxOccurs="1"
+                                 minOccurs="0" type="xsd:string" />
+                    <xsd:element name="Type" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="PrimaryOrganization" maxOccurs="1" minOccurs="0" type="xsd:string" >
+                    </xsd:element >
+                    <xsd:element name="CESAAdminRegistrationNumber" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="CESADUXPersonId" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="ContractedSince" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="CESAEthnicSchool" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element
+                            name="CESAStudentOrigin" maxOccurs="1" minOccurs="0" type="xsd:string" >
+                    </xsd:element >
+                    <xsd:element name="CESAAccommodationType" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="CESACEACategory"
+                                 maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="CESACEADeleted" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="CESACEAEndDate" maxOccurs="1" minOccurs="0"
+                                 type="xsd:string" />
+                    <xsd:element name="CESACEAExemption" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="CESACEANonParticipation" maxOccurs="1" minOccurs="0" type="xsd:string" >
+                    </xsd:element >
+                    <xsd:element name="CESACEAStartDate" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="CESACEAType" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element
+                            name="CESACertificateofEnrolment" maxOccurs="1" minOccurs="0" type="xsd:string" >
+                    </xsd:element >
+                    <xsd:element name="CESADETEEdId" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="CESADistanceEducation"
+                                 maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="CESAGuidanceReport" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="CESAH560VISA" maxOccurs="1" minOccurs="0"
+                                 type="xsd:string" />
+                    <xsd:element name="CESAHandoutFlag" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="CESAHardshipFlag" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="CESAHighestYearLevel" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="CESAHomestayEndDate" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element
+                            name="CESAHomestayFlag" maxOccurs="1" minOccurs="0" type="xsd:string" >
+                    </xsd:element >
+                    <xsd:element name="CESAHomestayStartDate" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element
+                            name="CESAInfectiousDiseasesFlag" maxOccurs="1" minOccurs="0" type="xsd:string" >
+                    </xsd:element >
+                    <xsd:element name="CESAInquiryDate" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element
+                            name="CESAInternationalName" maxOccurs="1" minOccurs="0" type="xsd:string" >
+                    </xsd:element >
+                    <xsd:element name="CESAKinderDevelopmentFlag" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="CESANESBFlag"
+                                 maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="CESARollClassNextYear" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="CESASACECompletedFlag" maxOccurs="1"
+                                 minOccurs="0" type="xsd:string" />
+                    <xsd:element name="CESAScholarshipFlag" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="CESASchoolCardAppliedDate" maxOccurs="1" minOccurs="0"
+                                 type="xsd:string" />
+                    <xsd:element name="CESASchoolCardApprovedDate" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="CESASchoolCardApprovedFlag" maxOccurs="1" minOccurs="0"
+                                 type="xsd:string" />
+                    <xsd:element name="CESASchoolReportFlag" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="CESASchoolSelectionReason" maxOccurs="1" minOccurs="0" type="xsd:string" >
+                    </xsd:element >
+                    <xsd:element name="CESASkillsAcheivements" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="CESASpecialConsiderations" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="CESATravelCardNumber" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="CESAWeightingMainLanguage" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element
+                            name="CESAWeightingOtherLanguage" maxOccurs="1" minOccurs="0" type="xsd:string" >
+                    </xsd:element >
+                    <xsd:element name="CESAWeightingOtherLanguage2" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element
+                            name="CESAIsolatedChildrenFlag" maxOccurs="1" minOccurs="0" type="xsd:string" >
+                    </xsd:element >
+                    <xsd:element name="CESAAckDateSent" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element
+                            name="CESAAssessmentComments" maxOccurs="1" minOccurs="0" type="xsd:string" >
+                    </xsd:element >
+                    <xsd:element name="CESAAbstudyFlag" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="CESAAustudyFlag"
+                                 maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="CESAInterviewComments" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="CESAInterviewDate" maxOccurs="1" minOccurs="0"
+                                 type="xsd:string" />
+                    <xsd:element name="CESAInterviewRequest" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="CESALetterofAcceptanceReceived" maxOccurs="1" minOccurs="0" type="xsd:string"
+                    />
+                    <xsd:element name="CESALetterofOfferSent" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="CESAPriority" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element
+                            name="SISApplicationNotes" maxOccurs="1" minOccurs="0" type="xsd:string" >
+                    </xsd:element >
+                    <xsd:element name="SISApplicationStatus" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element
+                            name="SISApplicationStatusCode" maxOccurs="1" minOccurs="0" type="xsd:string" >
+                    </xsd:element >
+                    <xsd:element name="SISApplicationStatusDate" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element
+                            name="ListOfCesaStudentOutboundInterface_Organization" maxOccurs="1" minOccurs="0" type="xsdLocal1:ListOfCesaStudentOutboundInterface_Organization" >
+                    </xsd:element >
+                    <xsd:element name="ListOfCesaStudentOutboundInterface_Position"
+                                 maxOccurs="1" minOccurs="0" type="xsdLocal1:ListOfCesaStudentOutboundInterface_Position" />
+                    <xsd:element name="ListOfCesaHouseholdInterface" maxOccurs="1" minOccurs="0" type="xsdLocal1:ListOfCesaHouseholdInterface" >
+                    </xsd:element >
+                    <xsd:element name="ListOfCesaFamilyParentInterface" maxOccurs="1" minOccurs="0" type="xsdLocal1:ListOfCesaFamilyParentInterface" />
+                    <xsd:element name="ListOfCesaBillingAccountContactInterface"
+                                 maxOccurs="1" minOccurs="0" type="xsdLocal1:ListOfCesaBillingAccountContactInterface" />
+                    <xsd:element name="ListOfCesaStudentFirstAidIncidentInterface" maxOccurs="1" minOccurs="0"
+                                 type="xsdLocal1:ListOfCesaStudentFirstAidIncidentInterface" />
+                    <xsd:element name="ListOfCesaContactNote" maxOccurs="1" minOccurs="0" type="xsdLocal1:ListOfCesaContactNote" />
+                    <xsd:element
+                            name="ListOfCesaStudentHealthFundInterface" maxOccurs="1" minOccurs="0" type="xsdLocal1:ListOfCesaStudentHealthFundInterface" >
+                    </xsd:element >
+                    <xsd:element name="ListOfCesaStudentImmVaccinationsInterface" maxOccurs="1" minOccurs="0"
+                                 type="xsdLocal1:ListOfCesaStudentImmVaccinationsInterface" />
+                    <xsd:element name="ListOfCesaStudentBehaviourEducationInterface" maxOccurs="1" minOccurs="0" type="xsdLocal1:ListOfCesaStudentBehaviourEducationInterface" >
+                    </xsd:element >
+                    <xsd:element name="ListOfCesaStudentCodesInterface" maxOccurs="1" minOccurs="0" type="xsdLocal1:ListOfCesaStudentCodesInterface" />
+                    <xsd:element name="ListOfCesaStudentIndigenousEducationInterface"
+                                 maxOccurs="1" minOccurs="0" type="xsdLocal1:ListOfCesaStudentIndigenousEducationInterface" />
+                    <xsd:element name="ListOfCesaStudentEslInterface" maxOccurs="1" minOccurs="0" type="xsdLocal1:ListOfCesaStudentEslInterface" >
+                    </xsd:element >
+                    <xsd:element name="ListOfCesaStudentLogInterface" maxOccurs="1" minOccurs="0" type="xsdLocal1:ListOfCesaStudentLogInterface" />
+                    <xsd:element name="ListOfCesaStudentMedPractitionerInterface" maxOccurs="1"
+                                 minOccurs="0" type="xsdLocal1:ListOfCesaStudentMedPractitionerInterface" />
+                    <xsd:element name="ListOfCesaStudentMedicalConditionsInterface" maxOccurs="1" minOccurs="0"
+                                 type="xsdLocal1:ListOfCesaStudentMedicalConditionsInterface" />
+                    <xsd:element name="ListOfCesaStudentMedicalPlanInterface" maxOccurs="1" minOccurs="0" type="xsdLocal1:ListOfCesaStudentMedicalPlanInterface" >
+                    </xsd:element
+                    >
+                    <xsd:element name="ListOfCesaStudentOtherEducationInterface" maxOccurs="1" minOccurs="0" type="xsdLocal1:ListOfCesaStudentOtherEducationInterface" />
+                    <xsd:element name="ListOfCesaStudentReligiousDetailsInterface"
+                                 maxOccurs="1" minOccurs="0" type="xsdLocal1:ListOfCesaStudentReligiousDetailsInterface" />
+                    <xsd:element name="ListOfCesaStudentSpecialEducationInterface" maxOccurs="1" minOccurs="0"
+                                 type="xsdLocal1:ListOfCesaStudentSpecialEducationInterface" />
+                    <xsd:element name="ListOfCesaStudentExemptionPermission" maxOccurs="1" minOccurs="0" type="xsdLocal1:ListOfCesaStudentExemptionPermission" />
+                    <xsd:element name="ListOfCesaStudentTravel" maxOccurs="1" minOccurs="0" type="xsdLocal1:ListOfCesaStudentTravel" />
+                    <xsd:element name="ListOfCesaStudentAddressInterface" maxOccurs="1" minOccurs="0"
+                                 type="xsdLocal1:ListOfCesaStudentAddressInterface" />
+                    <xsd:element name="ListOfCesaContactCredentialInterface" maxOccurs="1" minOccurs="0" type="xsdLocal1:ListOfCesaContactCredentialInterface" />
+                    <xsd:element name="ListOfCesaSchoolGroupsInterface" maxOccurs="1" minOccurs="0" type="xsdLocal1:ListOfCesaSchoolGroupsInterface" />
+                </xsd:sequence >
+            </xsd:complexType >
+            <xsd:complexType
+                    name="ListOfCesaStudentOutboundInterface_Organization" >
+                <xsd:sequence >
+                    <xsd:element name="CesaStudentOutboundInterface_Organization" maxOccurs="unbounded" minOccurs="0" type="xsdLocal1:CesaStudentOutboundInterface_Organization" >
+                    </xsd:element >
+                </xsd:sequence >
+            </xsd:complexType >
+            <xsd:complexType name="CesaStudentOutboundInterface_Organization" >
+                <xsd:sequence >
+                    <xsd:element name="OrganisationName" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                </xsd:sequence >
+            </xsd:complexType >
+            <xsd:complexType name="ListOfCesaStudentOutboundInterface_Position" >
+                <xsd:sequence >
+                    <xsd:element name="CesaStudentOutboundInterface_Position" maxOccurs="unbounded" minOccurs="0"
+                                 type="xsdLocal1:CesaStudentOutboundInterface_Position" />
+                </xsd:sequence >
+            </xsd:complexType >
+            <xsd:complexType name="CesaStudentOutboundInterface_Position" >
+                <xsd:sequence >
+                    <xsd:element name="Position" maxOccurs="1"
+                                 minOccurs="0" type="xsd:string" />
+                    <xsd:element name="Division" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                </xsd:sequence >
+            </xsd:complexType >
+            <xsd:complexType name="ListOfCesaHouseholdInterface" >
+                <xsd:sequence >
+                    <xsd:element name="CesaHouseholdInterface" maxOccurs="unbounded" minOccurs="0" type="xsdLocal1:CesaHouseholdInterface" />
+                </xsd:sequence >
+            </xsd:complexType >
+            <xsd:complexType name="CesaHouseholdInterface" >
+                <xsd:sequence >
+                    <xsd:element name="FaxNumber" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="GroupTypeCode" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="FamilyName"
+                                 maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="FamilyCode" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="PartyTypeCode" maxOccurs="1" minOccurs="0"
+                                 type="xsd:string" />
+                    <xsd:element name="PhoneNumber" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="PrivacyCode" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="AllocationType" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="SISEmailAddress" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="SISFeesPerc"
+                                 maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="SISGeneralNotes" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="SISPreferredCorrespondenceMethod" maxOccurs="1"
+                                 minOccurs="0" type="xsd:string" />
+                    <xsd:element name="SISReceiveCorrespondence" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="SISReceiveFinancialCorrecpondence" maxOccurs="1"
+                                 minOccurs="0" type="xsd:string" />
+                    <xsd:element name="Status" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="Type" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="CESADUXFamilyId" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="SISSchoolDEEWRCode" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="Income"
+                                 maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="ListOfCesaBillingAccountFamilyInterface" maxOccurs="1" minOccurs="0" type="xsdLocal1:ListOfCesaBillingAccountFamilyInterface" />
+                    <xsd:element name="ListOfCesaHouseholdOrganization" maxOccurs="1" minOccurs="0" type="xsdLocal1:ListOfCesaHouseholdOrganization" />
+                    <xsd:element name="ListOfCESAHouseholdInterface_Organization" maxOccurs="1"
+                                 minOccurs="0" type="xsdLocal1:ListOfCESAHouseholdInterface_Organization" />
+                    <xsd:element name="ListOfCesaHouseholdPosition" maxOccurs="1" minOccurs="0" type="xsdLocal1:ListOfCesaHouseholdPosition" />
+                    <xsd:element name="ListOfCESAHouseholdInterface_Position" maxOccurs="1" minOccurs="0" type="xsdLocal1:ListOfCESAHouseholdInterface_Position" />
+                    <xsd:element name="ListOfCesaFamilyAddressInterface" maxOccurs="1"
+                                 minOccurs="0" type="xsdLocal1:ListOfCesaFamilyAddressInterface" />
+                </xsd:sequence >
+            </xsd:complexType >
+            <xsd:complexType name="ListOfCesaFamilyParentInterface" >
+                <xsd:sequence >
+                    <xsd:element name="CesaFamilyParentInterface"
+                                 maxOccurs="unbounded" minOccurs="0" type="xsdLocal1:CesaFamilyParentInterface" />
+                </xsd:sequence >
+            </xsd:complexType >
+            <xsd:complexType name="CesaFamilyParentInterface" >
+                <xsd:sequence >
+                    <xsd:element name="CellularPhone"
+                                 maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="DateofBirth" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="EmailAddress" maxOccurs="1" minOccurs="0"
+                                 type="xsd:string" />
+                    <xsd:element name="FirstName" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="LastName" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element
+                            name="MF" maxOccurs="1" minOccurs="0" type="xsd:string" >
+                    </xsd:element >
+                    <xsd:element name="MiddleName" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="PrimaryAccountName" maxOccurs="1" minOccurs="0"
+                                 type="xsd:string" />
+                    <xsd:element name="SISAusArrivalDate" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="SISCountryofBirth" maxOccurs="1" minOccurs="0" type="xsd:string" >
+                    </xsd:element
+                    >
+                    <xsd:element name="SISCulturalBackground" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="SISMainLanguage" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element
+                            name="SISReligion" maxOccurs="1" minOccurs="0" type="xsd:string" >
+                    </xsd:element >
+                    <xsd:element name="SSN" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="FaxPhone" maxOccurs="1" minOccurs="0"
+                                 type="xsd:string" />
+                    <xsd:element name="HomePhone" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="SISEmergencyContact" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="WorkPhone" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="RelationshipType" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="CESADUXPersonId"
+                                 maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="CESANESBFlag" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="CESAParish" maxOccurs="1" minOccurs="0" type="xsd:string"
+                    />
+                    <xsd:element name="CESAPlaceofWorship" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="CESASoleParentFlag" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element
+                            name="Deceased" maxOccurs="1" minOccurs="0" type="xsd:string" >
+                    </xsd:element >
+                    <xsd:element name="SISNote" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="CESAAccessFLag" maxOccurs="1" minOccurs="0"
+                                 type="xsd:string" />
+                    <xsd:element name="CESAAccountHolderId" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="CESACentrelinkRecipient" maxOccurs="1" minOccurs="0" type="xsd:string" >
+                    </xsd:element >
+                    <xsd:element name="CESAEnrollParentIndFlag" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="CESAHomestayGuardianFlag" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="CESAOldScholarFinishYear" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="CESAOldScholarIndicator" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element
+                            name="CESAOldScholarSchool" maxOccurs="1" minOccurs="0" type="xsd:string" >
+                    </xsd:element >
+                    <xsd:element name="SISLevelofEducation" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="SISSchoolEducation"
+                                 maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="CESAOccupationGrp" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="CESAOccupation" maxOccurs="1" minOccurs="0"
+                                 type="xsd:string" />
+                    <xsd:element name="CESAQualification" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="SISNeedsInterpreter" maxOccurs="1" minOccurs="0" type="xsd:string" >
+                    </xsd:element >
+                    <xsd:element name="SISLivesWith" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="SISReceiveCorrFlag" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element
+                            name="WorkPhoneExtension" maxOccurs="1" minOccurs="0" type="xsd:string" >
+                    </xsd:element >
+                    <xsd:element name="Title" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="SISEmergencyPriority" maxOccurs="1"
+                                 minOccurs="0" type="xsd:string" />
+                    <xsd:element name="CESAFeePayerFlag" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="CESAFeePayerPercentage" maxOccurs="1" minOccurs="0"
+                                 type="xsd:string" />
+                    <xsd:element name="ListOfCesaSchoolInterfaceFamilyParent" maxOccurs="1" minOccurs="0" type="xsdLocal1:ListOfCesaSchoolInterfaceFamilyParent" />
+                    <xsd:element
+                            name="ListOfCESAFamilyParentInterface_Account" maxOccurs="1" minOccurs="0" type="xsdLocal1:ListOfCESAFamilyParentInterface_Account" >
+                    </xsd:element >
+                    <xsd:element name="ListOfCesaBillingContactOrganization" maxOccurs="1" minOccurs="0"
+                                 type="xsdLocal1:ListOfCesaBillingContactOrganization" />
+                    <xsd:element name="ListOfCESAFamilyParentInterface_Organization" maxOccurs="1" minOccurs="0" type="xsdLocal1:ListOfCESAFamilyParentInterface_Organization" >
+                    </xsd:element >
+                    <xsd:element name="CESACivicaFeePayer" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="ListOfCesaBillingContactPosition" maxOccurs="1" minOccurs="0"
+                                 type="xsdLocal1:ListOfCesaBillingContactPosition" />
+                    <xsd:element name="ListOfCESAFamilyParentInterface_Position" maxOccurs="1" minOccurs="0" type="xsdLocal1:ListOfCESAFamilyParentInterface_Position" />
+                    <xsd:element name="CESABPRef" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="ListOfCesaParentAddressInterface" maxOccurs="1" minOccurs="0" type="xsdLocal1:ListOfCesaParentAddressInterface" >
+                    </xsd:element >
+                </xsd:sequence >
+            </xsd:complexType >
+            <xsd:complexType name="ListOfCesaBillingAccountContactInterface" >
+                <xsd:sequence >
+                    <xsd:element name="CesaBillingAccountContactInterface2" maxOccurs="unbounded" minOccurs="0"
+                                 type="xsdLocal1:CesaBillingAccountContactInterface2" />
+                </xsd:sequence >
+            </xsd:complexType >
+            <xsd:complexType name="CesaBillingAccountContactInterface2" >
+                <xsd:sequence >
+                    <xsd:element name="AccountNumber" maxOccurs="1"
+                                 minOccurs="0" type="xsd:string" />
+                    <xsd:element name="AccountStatus" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="ContactAccountName" maxOccurs="1" minOccurs="0" type="xsd:string" >
+                    </xsd:element >
+                    <xsd:element name="SISBilltoContactSSN" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="SISBillingAccountType" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element
+                            name="CESABillpayReference" maxOccurs="1" minOccurs="0" type="xsd:string" >
+                    </xsd:element >
+                    <xsd:element name="CESABillingAccountSchoolDEEWR" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element
+                            name="ListOfCESABillingAccountContactInterface_Organization" maxOccurs="1" minOccurs="0" type="xsdLocal1:ListOfCESABillingAccountContactInterface_Organization" >
+                    </xsd:element >
+                    <xsd:element
+                            name="ListOfCESABillingAccountContactInterface_Position" maxOccurs="1" minOccurs="0" type="xsdLocal1:ListOfCESABillingAccountContactInterface_Position" >
+                    </xsd:element >
+                </xsd:sequence >
+            </xsd:complexType >
+            <xsd:complexType
+                    name="ListOfCesaStudentFirstAidIncidentInterface" >
+                <xsd:sequence >
+                    <xsd:element name="CesaStudentFirstAidIncidentInterface" maxOccurs="unbounded" minOccurs="0" type="xsdLocal1:CesaStudentFirstAidIncidentInterface" />
+                </xsd:sequence >
+            </xsd:complexType >
+            <xsd:complexType name="CesaStudentFirstAidIncidentInterface" >
+                <xsd:sequence >
+                    <xsd:element name="FirstAidName" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element
+                            name="SISEndDate" maxOccurs="1" minOccurs="0" type="xsd:string" >
+                    </xsd:element >
+                    <xsd:element name="SISFirstAidIncComments" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="SISFirstAidIncDate"
+                                 maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="SISFirstAidIncDetailDesc" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="SISFirstAidIncLocation" maxOccurs="1"
+                                 minOccurs="0" type="xsd:string" />
+                    <xsd:element name="SISFirstAidIncReportedBy" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="SISFirstAidIncSummary" maxOccurs="1" minOccurs="0"
+                                 type="xsd:string" />
+                    <xsd:element name="SISInactiveFlag" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="Type" default="SIS Student First Aid Inc" maxOccurs="1" minOccurs="0"
+                                 type="xsd:string" />
+                    <xsd:element name="CESAAccidentReference" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="CESAAccidentType" maxOccurs="1" minOccurs="0" type="xsd:string" >
+                    </xsd:element >
+                    <xsd:element name="CESADateofAccident" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="CESAIncidentDate" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element
+                            name="CESAMedication" maxOccurs="1" minOccurs="0" type="xsd:string" >
+                    </xsd:element >
+                    <xsd:element name="CESAOutcome" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="CESAPanadolFlag" maxOccurs="1"
+                                 minOccurs="0" type="xsd:string" />
+                    <xsd:element name="CESAPoliceInvolvementFlag" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="CESAStatutoryReportingFlag" maxOccurs="1" minOccurs="0"
+                                 type="xsd:string" />
+                    <xsd:element name="CESASymptoms" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="CESAVisitNumber" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="CESAVisitTime" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="CESAWitness" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                </xsd:sequence >
+            </xsd:complexType >
+            <xsd:complexType name="ListOfCesaContactNote" >
+                <xsd:sequence >
+                    <xsd:element name="CesaContactNote" maxOccurs="unbounded" minOccurs="0" type="xsdLocal1:CesaContactNote" />
+                </xsd:sequence >
+            </xsd:complexType >
+            <xsd:complexType name="CesaContactNote" >
+                <xsd:sequence >
+                    <xsd:element name="ContactId" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="Note" maxOccurs="1" minOccurs="0" type="xsd:string" >
+                    </xsd:element
+                    >
+                    <xsd:element name="NoteType" default="Note" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                </xsd:sequence >
+            </xsd:complexType >
+            <xsd:complexType name="ListOfCesaStudentHealthFundInterface" >
+                <xsd:sequence >
+                    <xsd:element
+                            name="CesaStudentHealthFundInterface" maxOccurs="unbounded" minOccurs="0" type="xsdLocal1:CesaStudentHealthFundInterface" >
+                    </xsd:element >
+                </xsd:sequence >
+            </xsd:complexType >
+            <xsd:complexType name="CesaStudentHealthFundInterface" >
+                <xsd:sequence >
+                    <xsd:element name="HealthFundNameKey" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="SISEndDate" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element
+                            name="SISHealthFundAmbulanceCover" maxOccurs="1" minOccurs="0" type="xsd:string" >
+                    </xsd:element >
+                    <xsd:element name="SISHealthFundComments" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element
+                            name="SISHealthFundMedicareNumber" maxOccurs="1" minOccurs="0" type="xsd:string" >
+                    </xsd:element >
+                    <xsd:element name="SISHealthFundName" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element
+                            name="SISHealthFundOtherName" maxOccurs="1" minOccurs="0" type="xsd:string" >
+                    </xsd:element >
+                    <xsd:element name="SISHealthFundPolicyNumber" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element
+                            name="SISHealthFundStartDate" maxOccurs="1" minOccurs="0" type="xsd:string" >
+                    </xsd:element >
+                    <xsd:element name="SISInactiveFlag" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="Type" default="SIS
+Student Health Fund" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="CESAHealthFundContactName" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element
+                            name="CESAHealthFundContactNumber" maxOccurs="1" minOccurs="0" type="xsd:string" >
+                    </xsd:element >
+                    <xsd:element name="CESAHospitalPatientNumber" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element
+                            name="CESAParentalCoverFlag" maxOccurs="1" minOccurs="0" type="xsd:string" >
+                    </xsd:element >
+                </xsd:sequence >
+            </xsd:complexType >
+            <xsd:complexType name="ListOfCesaStudentImmVaccinationsInterface" >
+                <xsd:sequence >
+                    <xsd:element
+                            name="CesaStudentImmVaccinationsInterface" maxOccurs="unbounded" minOccurs="0" type="xsdLocal1:CesaStudentImmVaccinationsInterface" >
+                    </xsd:element >
+                </xsd:sequence >
+            </xsd:complexType >
+            <xsd:complexType
+                    name="CesaStudentImmVaccinationsInterface" >
+                <xsd:sequence >
+                    <xsd:element name="ImmunisationName" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="SISEndDate" maxOccurs="1" minOccurs="0"
+                                 type="xsd:string" />
+                    <xsd:element name="SISImmVaccComments" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="SISImmVaccDateAdmin" maxOccurs="1" minOccurs="0" type="xsd:string" >
+                    </xsd:element >
+                    <xsd:element name="SISImmVaccDueDate" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="SISImmVaccProvider" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element
+                            name="SISImmVaccType" maxOccurs="1" minOccurs="0" type="xsd:string" >
+                    </xsd:element >
+                    <xsd:element name="SISInactiveFlag" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="Type" default="SIS Student Imm
+Vacc" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                </xsd:sequence >
+            </xsd:complexType >
+            <xsd:complexType name="ListOfCesaStudentBehaviourEducationInterface" >
+                <xsd:sequence >
+                    <xsd:element
+                            name="CesaStudentBehaviourEducationInterface" maxOccurs="unbounded" minOccurs="0" type="xsdLocal1:CesaStudentBehaviourEducationInterface" >
+                    </xsd:element >
+                </xsd:sequence >
+            </xsd:complexType >
+            <xsd:complexType
+                    name="CesaStudentBehaviourEducationInterface" >
+                <xsd:sequence >
+                    <xsd:element name="BehaviourName" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="SISBehaviourEduAccomodations" maxOccurs="1"
+                                 minOccurs="0" type="xsd:string" />
+                    <xsd:element name="SISBehaviourEduAccomodationsNotes" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="SISBehaviourEduActive" maxOccurs="1" minOccurs="0"
+                                 type="xsd:string" />
+                    <xsd:element name="SISBehaviourEduAddAmount" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="SISBehaviourEduAgencyInvolvement" maxOccurs="1" minOccurs="0"
+                                 type="xsd:string" />
+                    <xsd:element name="SISBehaviourEduAgencyInvolvementNotes" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="SISBehaviourEduAmount" maxOccurs="1" minOccurs="0"
+                                 type="xsd:string" />
+                    <xsd:element name="SISBehaviourEduAssessmentDate" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="SISBehaviourEduAssessmentNotes" maxOccurs="1" minOccurs="0"
+                                 type="xsd:string" />
+                    <xsd:element name="SISBehaviourEduAssessmentType" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="SISBehaviourEduCapitalGrantAmount" maxOccurs="1" minOccurs="0"
+                                 type="xsd:string" />
+                    <xsd:element name="SISBehaviourEduConsultantAssigned" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="SISBehaviourEduDateEnded" maxOccurs="1" minOccurs="0"
+                                 type="xsd:string" />
+                    <xsd:element name="SISBehaviourEduHours" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="SISBehaviourEduLearningNeeds" maxOccurs="1" minOccurs="0" type="xsd:string" >
+                    </xsd:element >
+                    <xsd:element name="SISBehaviourEduLearningNeedsNotes" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="SISBehaviourEduLearningPlan" maxOccurs="1" minOccurs="0" type="xsd:string" >
+                    </xsd:element >
+                    <xsd:element name="SISBehaviourEduLearningPlanNotes" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="SISBehaviourEduNeeds" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="SISBehaviourEduNotes" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="SISBehaviourEduParGuardConsent" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element
+                            name="SISBehaviourEduSchoolAmount" maxOccurs="1" minOccurs="0" type="xsd:string" >
+                    </xsd:element >
+                    <xsd:element name="SISBehaviourEduSchoolHours" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element
+                            name="SISEndDate" maxOccurs="1" minOccurs="0" type="xsd:string" >
+                    </xsd:element >
+                    <xsd:element name="SISInactiveFlag" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="Type" default="SIS Stud Behav Edu"
+                                 maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="CESACaseManagementEnd" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="CESACaseManagementStart" maxOccurs="1"
+                                 minOccurs="0" type="xsd:string" />
+                </xsd:sequence >
+            </xsd:complexType >
+            <xsd:complexType name="ListOfCesaStudentCodesInterface" >
+                <xsd:sequence >
+                    <xsd:element name="CesaStudentCodesInterface" maxOccurs="unbounded"
+                                 minOccurs="0" type="xsdLocal1:CesaStudentCodesInterface" />
+                </xsd:sequence >
+            </xsd:complexType >
+            <xsd:complexType name="CesaStudentCodesInterface" >
+                <xsd:sequence >
+                    <xsd:element name="StudentCodeName" maxOccurs="1"
+                                 minOccurs="0" type="xsd:string" />
+                    <xsd:element name="SISEndDate" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="SISInactiveFlag" maxOccurs="1" minOccurs="0" type="xsd:string" >
+                    </xsd:element >
+                    <xsd:element name="SISMiscCode" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="SISStudentId" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element
+                            name="SISUserName2" maxOccurs="1" minOccurs="0" type="xsd:string" >
+                    </xsd:element >
+                    <xsd:element name="Type" default="SIS Student Codes" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                </xsd:sequence >
+            </xsd:complexType >
+            <xsd:complexType name="ListOfCesaStudentIndigenousEducationInterface" >
+                <xsd:sequence >
+                    <xsd:element name="CesaStudentIndigenousEducationInterface" maxOccurs="unbounded" minOccurs="0"
+                                 type="xsdLocal1:CesaStudentIndigenousEducationInterface" />
+                </xsd:sequence >
+            </xsd:complexType >
+            <xsd:complexType name="CesaStudentIndigenousEducationInterface" >
+                <xsd:sequence >
+                    <xsd:element name="IndigenousNameKey"
+                                 maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="SISEndDate" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="SISInactiveFlag" maxOccurs="1" minOccurs="0"
+                                 type="xsd:string" />
+                    <xsd:element name="SISIndEduAccomodations" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="SISIndEduAccomodationsNotes" maxOccurs="1" minOccurs="0" type="xsd:string"
+                    />
+                    <xsd:element name="SISIndEduActive" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="SISIndEduAddAmount" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element
+                            name="SISIndEduAgencyInvolvement" maxOccurs="1" minOccurs="0" type="xsd:string" >
+                    </xsd:element >
+                    <xsd:element name="SISIndEduAgencyInvolvementNotes" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element
+                            name="SISIndEduAmount" maxOccurs="1" minOccurs="0" type="xsd:string" >
+                    </xsd:element >
+                    <xsd:element name="SISIndEduAssessmentDate" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element
+                            name="SISIndEduAssessmentNotes" maxOccurs="1" minOccurs="0" type="xsd:string" >
+                    </xsd:element >
+                    <xsd:element name="SISIndEduAssessmentType" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element
+                            name="SISIndEduCapitalGrantAmount" maxOccurs="1" minOccurs="0" type="xsd:string" >
+                    </xsd:element >
+                    <xsd:element name="SISIndEduConsultantAssigned" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element
+                            name="SISIndEduDateEnded" maxOccurs="1" minOccurs="0" type="xsd:string" >
+                    </xsd:element >
+                    <xsd:element name="SISIndEduFromIndBackground" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="SISIndEduHours"
+                                 maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="SISIndEduLearningNeeds" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="SISIndEduLearningNeedsNotes" maxOccurs="1"
+                                 minOccurs="0" type="xsd:string" />
+                    <xsd:element name="SISIndEduLearningPlan" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="SISIndEduLearningPlanNotes" maxOccurs="1" minOccurs="0"
+                                 type="xsd:string" />
+                    <xsd:element name="SISIndEduNotes" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="SISIndEduParGuardConsent" maxOccurs="1" minOccurs="0" type="xsd:string" >
+                    </xsd:element >
+                    <xsd:element name="SISIndEduSchoolAmount" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="SISIndEduSchoolHours" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="Type" default="SIS Student Ind Education" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="CESACaseManagementEnd" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="CESACaseManagementStart" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                </xsd:sequence >
+            </xsd:complexType >
+            <xsd:complexType name="ListOfCesaStudentEslInterface" >
+                <xsd:sequence >
+                    <xsd:element
+                            name="CesaStudentEslInterface" maxOccurs="unbounded" minOccurs="0" type="xsdLocal1:CesaStudentEslInterface" >
+                    </xsd:element >
+                </xsd:sequence >
+            </xsd:complexType >
+            <xsd:complexType name="CesaStudentEslInterface" >
+                <xsd:sequence >
+                    <xsd:element name="ESLNameKey" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="SISESLAccommodation" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element
+                            name="SISESLAccommodationNotes" maxOccurs="1" minOccurs="0" type="xsd:string" >
+                    </xsd:element >
+                    <xsd:element name="SISESLActive" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="SISESLAgencyInvolvement"
+                                 maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="SISESLAgencyInvolvementNotes" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="SISESLAssessmentDate" maxOccurs="1"
+                                 minOccurs="0" type="xsd:string" />
+                    <xsd:element name="SISESLAssessmentNotes" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="SISESLAssessmentType" maxOccurs="1" minOccurs="0"
+                                 type="xsd:string" />
+                    <xsd:element name="SISESLConsultantAssigned" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="SISESLEndDate" maxOccurs="1" minOccurs="0" type="xsd:string" >
+                    </xsd:element >
+                    <xsd:element name="SISESLLearningPlan" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="SISESLLearningPlanNotes" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="SISESLNGSReport" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="SISESLNotes" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="SISESLParGuardConsent"
+                                 maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="SISESLScaleEndDate" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="SISESLScaleLevel" maxOccurs="1" minOccurs="0"
+                                 type="xsd:string" />
+                    <xsd:element name="SISESLScaleStartDate" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="SISESLSupportCategory" maxOccurs="1" minOccurs="0" type="xsd:string" >
+                    </xsd:element >
+                    <xsd:element name="SISEndDate" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="SISInactiveFlag" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="Type"
+                                 default="SIS Student ESL" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="CESACaseManagementEnd" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element
+                            name="CESACaseManagementStart" maxOccurs="1" minOccurs="0" type="xsd:string" >
+                    </xsd:element >
+                    <xsd:element name="CESAESLNGS" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="CESAESLNGSEndDate"
+                                 maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="CESAESLNGSStartDate" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="CESAESPGoal" maxOccurs="1" minOccurs="0"
+                                 type="xsd:string" />
+                    <xsd:element name="CESAEducationalBackground" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="CESALanguageWeight" maxOccurs="1" minOccurs="0" type="xsd:string" >
+                    </xsd:element >
+                    <xsd:element name="CESATypeofESLSupport" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                </xsd:sequence >
+            </xsd:complexType >
+            <xsd:complexType name="ListOfCesaStudentLogInterface" >
+                <xsd:sequence >
+                    <xsd:element name="CesaStudentLogInterface" maxOccurs="unbounded" minOccurs="0" type="xsdLocal1:CesaStudentLogInterface" />
+                </xsd:sequence >
+            </xsd:complexType >
+            <xsd:complexType name="CesaStudentLogInterface" >
+                <xsd:sequence >
+                    <xsd:element name="StudentLogName" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="SISEndDate" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element
+                            name="SISInactiveFlag" maxOccurs="1" minOccurs="0" type="xsd:string" >
+                    </xsd:element >
+                    <xsd:element name="SISStudentLogCategory" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="SISStudentLogClosed"
+                                 maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="SISStudentLogComments" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="SISStudentLogCreateAlert" maxOccurs="1"
+                                 minOccurs="0" type="xsd:string" />
+                    <xsd:element name="Type" default="SIS Student Log" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                </xsd:sequence >
+            </xsd:complexType >
+            <xsd:complexType
+                    name="ListOfCesaStudentMedPractitionerInterface" >
+                <xsd:sequence >
+                    <xsd:element name="CesaStudentMedPractitionerInterface" maxOccurs="unbounded" minOccurs="0" type="xsdLocal1:CesaStudentMedPractitionerInterface" />
+                </xsd:sequence >
+            </xsd:complexType >
+            <xsd:complexType name="CesaStudentMedPractitionerInterface" >
+                <xsd:sequence >
+                    <xsd:element name="MedicalPractitionerNameKey" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element
+                            name="SISEndDate" maxOccurs="1" minOccurs="0" type="xsd:string" >
+                    </xsd:element >
+                    <xsd:element name="SISInactiveFlag" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="SISMedPractitionerAddress"
+                                 maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="SISMedPractitionerName" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="SISMedPractitionerPhoneNumber" maxOccurs="1"
+                                 minOccurs="0" type="xsd:string" />
+                    <xsd:element name="SISMedPractitionerPractiseName" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="SISMedPractitionerSpecialisation" maxOccurs="1"
+                                 minOccurs="0" type="xsd:string" />
+                    <xsd:element name="Type" default="SIS Student Med Practitioner" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="CESAPractitionerAlternativeContact"
+                                 maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="CESAPractitionerHospital" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                </xsd:sequence >
+            </xsd:complexType >
+            <xsd:complexType
+                    name="ListOfCesaStudentMedicalConditionsInterface" >
+                <xsd:sequence >
+                    <xsd:element name="CesaStudentMedicalConditionsInterface" maxOccurs="unbounded" minOccurs="0" type="xsdLocal1:CesaStudentMedicalConditionsInterface" />
+                </xsd:sequence >
+            </xsd:complexType >
+            <xsd:complexType name="CesaStudentMedicalConditionsInterface" >
+                <xsd:sequence >
+                    <xsd:element name="MedicalConditionNameKey" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element
+                            name="SISEndDate" maxOccurs="1" minOccurs="0" type="xsd:string" >
+                    </xsd:element >
+                    <xsd:element name="SISInactiveFlag" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="SISMedCondCause" maxOccurs="1"
+                                 minOccurs="0" type="xsd:string" />
+                    <xsd:element name="SISMedCondComments" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="SISMedCondCreateAlert" maxOccurs="1" minOccurs="0"
+                                 type="xsd:string" />
+                    <xsd:element name="SISMedCondSymptoms" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="SISMedCondType" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="SISMedCondWarning" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="Type" default="SIS Student Med Cond" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element
+                            name="CESAYearIdentified" maxOccurs="1" minOccurs="0" type="xsd:string" >
+                    </xsd:element >
+                </xsd:sequence >
+            </xsd:complexType >
+            <xsd:complexType name="ListOfCesaStudentMedicalPlanInterface" >
+                <xsd:sequence >
+                    <xsd:element
+                            name="CesaStudentMedicalPlanInterface" maxOccurs="unbounded" minOccurs="0" type="xsdLocal1:CesaStudentMedicalPlanInterface" >
+                    </xsd:element >
+                </xsd:sequence >
+            </xsd:complexType >
+            <xsd:complexType name="CesaStudentMedicalPlanInterface" >
+                <xsd:sequence >
+                    <xsd:element name="MedicalPlanNameKey" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="SISEndDate" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element
+                            name="SISInactiveFlag" maxOccurs="1" minOccurs="0" type="xsd:string" >
+                    </xsd:element >
+                    <xsd:element name="SISMedPlanAction" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="SISMedPlanComments"
+                                 maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="SISMedPlanCondType" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="SISMedPlanDosage" maxOccurs="1" minOccurs="0"
+                                 type="xsd:string" />
+                    <xsd:element name="SISMedPlanMedication" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="SISMedPlanPriority" maxOccurs="1" minOccurs="0" type="xsd:string" >
+                    </xsd:element >
+                    <xsd:element name="Type" default="SIS Student Med Plan" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                </xsd:sequence >
+            </xsd:complexType >
+            <xsd:complexType name="ListOfCesaStudentOtherEducationInterface"
+            >
+                <xsd:sequence >
+                    <xsd:element name="CesaStudentOtherEducationInterface" maxOccurs="unbounded" minOccurs="0" type="xsdLocal1:CesaStudentOtherEducationInterface" />
+                </xsd:sequence >
+            </xsd:complexType >
+            <xsd:complexType
+                    name="CesaStudentOtherEducationInterface" >
+                <xsd:sequence >
+                    <xsd:element name="OtherEducationNameKey" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="SISAllocation" maxOccurs="1" minOccurs="0"
+                                 type="xsd:string" />
+                    <xsd:element name="SISCompletionDate" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="SISContactName" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="SISContactNumber" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="SISCourseCode" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="SISEndDate"
+                                 maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="SISEquipment" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="SISFTE2" maxOccurs="1" minOccurs="0" type="xsd:string" >
+                    </xsd:element >
+                    <xsd:element name="SISInactiveFlag" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="SISProviderName" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element
+                            name="SISStartDate" maxOccurs="1" minOccurs="0" type="xsd:string" >
+                    </xsd:element >
+                    <xsd:element name="Type" default="SIS Student Other Education" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element
+                            name="CESAEmploymentCategory" maxOccurs="1" minOccurs="0" type="xsd:string" >
+                    </xsd:element >
+                    <xsd:element name="CESAEnrolmentDate" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="CESAEnrolmentSemester"
+                                 maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="CESAEnrolmentStatus" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="CESAIndustryArea" maxOccurs="1" minOccurs="0"
+                                 type="xsd:string" />
+                    <xsd:element name="CESALanguageCode" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="CESAModuleIdentifier" maxOccurs="1" minOccurs="0" type="xsd:string" >
+                    </xsd:element >
+                    <xsd:element name="CESANativeLanguage" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="CESAStudentStatus" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element
+                            name="CESASubjectCode" maxOccurs="1" minOccurs="0" type="xsd:string" >
+                    </xsd:element >
+                    <xsd:element name="CESAVETClassNumber" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="CESAVETComment"
+                                 maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="CESAVETCourseName" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                </xsd:sequence >
+            </xsd:complexType >
+            <xsd:complexType
+                    name="ListOfCesaStudentReligiousDetailsInterface" >
+                <xsd:sequence >
+                    <xsd:element name="CesaStudentReligiousDetailsInterface" maxOccurs="unbounded" minOccurs="0" type="xsdLocal1:CesaStudentReligiousDetailsInterface" />
+                </xsd:sequence >
+            </xsd:complexType >
+            <xsd:complexType name="CesaStudentReligiousDetailsInterface" >
+                <xsd:sequence >
+                    <xsd:element name="ReligiousNameKey" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element
+                            name="SISBaptismCertSigned" maxOccurs="1" minOccurs="0" type="xsd:string" >
+                    </xsd:element >
+                    <xsd:element name="SISBaptismChurch" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="SISBaptismDate"
+                                 maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="SISBaptismSuburbPostcode" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="SISConfirmationChurch" maxOccurs="1"
+                                 minOccurs="0" type="xsd:string" />
+                    <xsd:element name="SISConfirmationDate" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="SISConfirmationPostcode" maxOccurs="1" minOccurs="0"
+                                 type="xsd:string" />
+                    <xsd:element name="SISCurrentParish" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="SISEndDate" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="SISFirstCommunionChurch" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="SISFirstCommunionDate" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element
+                            name="SISFirstCommunionSuburb" maxOccurs="1" minOccurs="0" type="xsd:string" >
+                    </xsd:element >
+                    <xsd:element name="SISInactiveFlag" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element
+                            name="SISReconciliationChurch" maxOccurs="1" minOccurs="0" type="xsd:string" >
+                    </xsd:element >
+                    <xsd:element name="SISReconciliationDate" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element
+                            name="SISReconciliationSuburbPostcode" maxOccurs="1" minOccurs="0" type="xsd:string" >
+                    </xsd:element >
+                    <xsd:element name="SISReligion" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="Type" default="SIS
+Student Religious" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                </xsd:sequence >
+            </xsd:complexType >
+            <xsd:complexType name="ListOfCesaStudentSpecialEducationInterface" >
+                <xsd:sequence >
+                    <xsd:element
+                            name="CesaStudentSpecialEducationInterface" maxOccurs="unbounded" minOccurs="0" type="xsdLocal1:CesaStudentSpecialEducationInterface" >
+                    </xsd:element >
+                </xsd:sequence >
+            </xsd:complexType >
+            <xsd:complexType
+                    name="CesaStudentSpecialEducationInterface" >
+                <xsd:sequence >
+                    <xsd:element name="SpecialEdNameKey" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="SISEndDate" maxOccurs="1" minOccurs="0"
+                                 type="xsd:string" />
+                    <xsd:element name="SISInactiveFlag" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="SISSpecEduAccomodations" maxOccurs="1" minOccurs="0" type="xsd:string" >
+                    </xsd:element >
+                    <xsd:element name="SISSpecEduAccomodationsNotes" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="SISSpecEduActive" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="SISSpecEduAddAmount" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="SISSpecEduAgencyInvolvement" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element
+                            name="SISSpecEduAgencyInvolvementNotes" maxOccurs="1" minOccurs="0" type="xsd:string" >
+                    </xsd:element >
+                    <xsd:element name="SISSpecEduAmount" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element
+                            name="SISSpecEduAssessmentDate" maxOccurs="1" minOccurs="0" type="xsd:string" >
+                    </xsd:element >
+                    <xsd:element name="SISSpecEduAssessmentNotes" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element
+                            name="SISSpecEduAssessmentType" maxOccurs="1" minOccurs="0" type="xsd:string" >
+                    </xsd:element >
+                    <xsd:element name="SISSpecEduCapitalGrantAmount" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element
+                            name="SISSpecEduCapitalGrantNotes" maxOccurs="1" minOccurs="0" type="xsd:string" >
+                    </xsd:element >
+                    <xsd:element name="SISSpecEduConsultantAssigned" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element
+                            name="SISSpecEduDateEnded" maxOccurs="1" minOccurs="0" type="xsd:string" >
+                    </xsd:element >
+                    <xsd:element name="SISSpecEduDisabilityLevel" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element
+                            name="SISSpecEduDisabilitySubType" maxOccurs="1" minOccurs="0" type="xsd:string" >
+                    </xsd:element >
+                    <xsd:element name="SISSpecEduDisabilityType" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element
+                            name="SISSpecEduHours" maxOccurs="1" minOccurs="0" type="xsd:string" >
+                    </xsd:element >
+                    <xsd:element name="SISSpecEduLearningPlan" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element
+                            name="SISSpecEduLearningPlanNotes" maxOccurs="1" minOccurs="0" type="xsd:string" >
+                    </xsd:element >
+                    <xsd:element name="SISSpecEduNotes" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element
+                            name="SISSpecEduNotesCalc" maxOccurs="1" minOccurs="0" type="xsd:string" >
+                    </xsd:element >
+                    <xsd:element name="SISSpecEduParGuardConsent" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element
+                            name="SISSpecEduPrimDisabilityIndicator" maxOccurs="1" minOccurs="0" type="xsd:string" >
+                    </xsd:element >
+                    <xsd:element name="SISSpecEduSchoolAmount" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element
+                            name="SISSpecEduSchoolHours" maxOccurs="1" minOccurs="0" type="xsd:string" >
+                    </xsd:element >
+                    <xsd:element name="Type" default="SIS Student Spec Education" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element
+                            name="CESAAdditionalNeedCode" maxOccurs="1" minOccurs="0" type="xsd:string" >
+                    </xsd:element >
+                    <xsd:element name="CESAAssistanceType" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element
+                            name="CESACapitalGrantsNotes" maxOccurs="1" minOccurs="0" type="xsd:string" >
+                    </xsd:element >
+                    <xsd:element name="CESACaseManagementEnd" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element
+                            name="CESACaseManagementStart" maxOccurs="1" minOccurs="0" type="xsd:string" >
+                    </xsd:element >
+                    <xsd:element name="CESADateFrom" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="CESAFundingAmount"
+                                 maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="CESALearningNeedEffectiveStart" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="CESALoanEquipment" maxOccurs="1"
+                                 minOccurs="0" type="xsd:string" />
+                    <xsd:element name="CESANSO" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="CESASpecialEducationSupport" maxOccurs="1" minOccurs="0" type="xsd:string" >
+                    </xsd:element >
+                    <xsd:element name="CESASupportAgency" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="CESASpecialEdYearIdentified" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="CESAAdditionalNeedName" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="CESAEduFundingType" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                </xsd:sequence >
+            </xsd:complexType >
+            <xsd:complexType name="ListOfCesaStudentExemptionPermission" >
+                <xsd:sequence >
+                    <xsd:element name="CesaStudentExemptionPermission" maxOccurs="unbounded" minOccurs="0" type="xsdLocal1:CesaStudentExemptionPermission" >
+                    </xsd:element >
+                </xsd:sequence >
+            </xsd:complexType >
+            <xsd:complexType name="CesaStudentExemptionPermission" >
+                <xsd:sequence >
+                    <xsd:element name="CESAApprovedBy" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element
+                            name="CESAApprovedFlag" maxOccurs="1" minOccurs="0" type="xsd:string" >
+                    </xsd:element >
+                    <xsd:element name="CESAExemptionFrom" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="CESAExemptionNumber"
+                                 maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="CESAExemptionTo" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="CESAPermanentFlag" maxOccurs="1" minOccurs="0"
+                                 type="xsd:string" />
+                    <xsd:element name="CESAReasonCode" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="CESAValidFrom" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="CESAValidTo" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="ExemptionName" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="Type"
+                                 default="StudentExemp" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="CESAUntilFurtherNoticeFlag" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                </xsd:sequence >
+            </xsd:complexType >
+            <xsd:complexType name="ListOfCesaStudentTravel" >
+                <xsd:sequence >
+                    <xsd:element name="CesaStudentTravel" maxOccurs="unbounded" minOccurs="0" type="xsdLocal1:CesaStudentTravel" />
+                </xsd:sequence >
+            </xsd:complexType >
+            <xsd:complexType name="CesaStudentTravel" >
+                <xsd:sequence >
+                    <xsd:element name="CESADriverStudentID" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="CESADriversLicenceNumber" maxOccurs="1" minOccurs="0"
+                                 type="xsd:string" />
+                    <xsd:element name="CESAModeofTransport" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="CESASchoolBus1AmRoute" maxOccurs="1" minOccurs="0" type="xsd:string" >
+                    </xsd:element >
+                    <xsd:element name="CESASchoolBus1AmStop" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="CESASchoolBus1AmTime" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element
+                            name="CESACarMake" maxOccurs="1" minOccurs="0" type="xsd:string" >
+                    </xsd:element >
+                    <xsd:element name="CESATravelDay" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="CESAVehicleRegistrationNumber"
+                                 maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="StudentTravelName" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="Type" default="StudentTravel" maxOccurs="1"
+                                 minOccurs="0" type="xsd:string" />
+                </xsd:sequence >
+            </xsd:complexType >
+            <xsd:complexType name="ListOfCesaStudentAddressInterface" >
+                <xsd:sequence >
+                    <xsd:element name="CesaStudentAddressInterface" maxOccurs="unbounded"
+                                 minOccurs="0" type="xsdLocal1:CesaStudentAddressInterface" />
+                </xsd:sequence >
+            </xsd:complexType >
+            <xsd:complexType name="CesaStudentAddressInterface" >
+                <xsd:sequence >
+                    <xsd:element name="AddressType" maxOccurs="1"
+                                 minOccurs="0" type="xsd:string" />
+                    <xsd:element name="CESAAddrDescription" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="CESAAddressLine1" maxOccurs="1" minOccurs="0" type="xsd:string"
+                    />
+                    <xsd:element name="CESAAddressLine2" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="CESAAddressLine3" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element
+                            name="CESACountry" maxOccurs="1" minOccurs="0" type="xsd:string" >
+                    </xsd:element >
+                    <xsd:element name="CESAHundred" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="CESALotPortionorRMBNumber"
+                                 maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="CESAMailingTitleName" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="CESAMailingTitleSalutation" maxOccurs="1"
+                                 minOccurs="0" type="xsd:string" />
+                    <xsd:element name="CESANearestCrossRoad" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="CESAPostCode" maxOccurs="1" minOccurs="0" type="xsd:string" >
+                    </xsd:element >
+                    <xsd:element name="CESASection" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="CESAState" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element
+                            name="CESAUnitFlatNumber" maxOccurs="1" minOccurs="0" type="xsd:string" >
+                    </xsd:element >
+                    <xsd:element name="City" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="CESABillingFlag" maxOccurs="1"
+                                 minOccurs="0" type="xsd:string" />
+                    <xsd:element name="CESACorrespondenceFlag" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="CESAResidentialFlag" maxOccurs="1" minOccurs="0"
+                                 type="xsd:string" />
+                </xsd:sequence >
+            </xsd:complexType >
+            <xsd:complexType name="ListOfCesaContactCredentialInterface" >
+                <xsd:sequence >
+                    <xsd:element name="CesaContactCredentialInterface" maxOccurs="unbounded" minOccurs="0"
+                                 type="xsdLocal1:CesaContactCredentialInterface" />
+                </xsd:sequence >
+            </xsd:complexType >
+            <xsd:complexType name="CesaContactCredentialInterface" >
+                <xsd:sequence >
+                    <xsd:element name="Category" maxOccurs="1" minOccurs="0"
+                                 type="xsd:string" />
+                    <xsd:element name="ContactId" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="ExpiryDate" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element
+                            name="IssueDate" maxOccurs="1" minOccurs="0" type="xsd:string" >
+                    </xsd:element >
+                    <xsd:element name="IssuingCountry" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="Number" maxOccurs="1" minOccurs="0"
+                                 type="xsd:string" />
+                    <xsd:element name="Status" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="Type" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                </xsd:sequence >
+            </xsd:complexType >
+            <xsd:complexType name="ListOfCesaSchoolGroupsInterface" >
+                <xsd:sequence >
+                    <xsd:element name="CesaSchoolGroupsInterface" maxOccurs="unbounded" minOccurs="0" type="xsdLocal1:CesaSchoolGroupsInterface" />
+                </xsd:sequence >
+            </xsd:complexType >
+            <xsd:complexType name="CesaSchoolGroupsInterface" >
+                <xsd:sequence >
+                    <xsd:element name="CESAEndDate" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="CESASchoolDEEWR"
+                                 maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="CESATimetableMastered" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="ClassType" maxOccurs="1" minOccurs="0"
+                                 type="xsd:string" />
+                    <xsd:element name="CourseName" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="ClassCode" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element
+                            name="Year" maxOccurs="1" minOccurs="0" type="xsd:string" >
+                    </xsd:element >
+                    <xsd:element name="CESAGroupEndDate" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="Status" maxOccurs="1" minOccurs="0"
+                                 type="xsd:string" />
+                    <xsd:element name="ListOfCesaSchoolGroupOrganization" maxOccurs="1" minOccurs="0" type="xsdLocal1:ListOfCesaSchoolGroupOrganization" />
+                    <xsd:element name="ListOfCesaSchoolGroupPosition"
+                                 maxOccurs="1" minOccurs="0" type="xsdLocal1:ListOfCesaSchoolGroupPosition" />
+                    <xsd:element name="ListOfCESASchoolGroupsInterface_Organisation" maxOccurs="1" minOccurs="0"
+                                 type="xsdLocal1:ListOfCESASchoolGroupsInterface_Organisation" />
+                    <xsd:element name="ListOfCESASchoolGroupsInterface_Position" maxOccurs="1" minOccurs="0" type="xsdLocal1:ListOfCESASchoolGroupsInterface_Position" >
+                    </xsd:element >
+                </xsd:sequence >
+            </xsd:complexType >
+            <xsd:complexType name="ListOfCesaBillingAccountFamilyInterface" >
+                <xsd:sequence >
+                    <xsd:element name="CesaBillingAccountFamilyInterface" maxOccurs="unbounded" minOccurs="0"
+                                 type="xsdLocal1:CesaBillingAccountFamilyInterface" />
+                </xsd:sequence >
+            </xsd:complexType >
+            <xsd:complexType name="CesaBillingAccountFamilyInterface" >
+                <xsd:sequence >
+                    <xsd:element name="AccountNumber" maxOccurs="1"
+                                 minOccurs="0" type="xsd:string" />
+                    <xsd:element name="AccountStatus" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="ContactAccountName" maxOccurs="1" minOccurs="0" type="xsd:string" >
+                    </xsd:element >
+                    <xsd:element name="SISBilltoContactSSN" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="SISBillingAccountType" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element
+                            name="CESABillpayReference" maxOccurs="1" minOccurs="0" type="xsd:string" >
+                    </xsd:element >
+                    <xsd:element name="CESABillingAccountSchoolDEEWR" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                </xsd:sequence >
+            </xsd:complexType >
+            <xsd:complexType name="ListOfCesaHouseholdOrganization" >
+                <xsd:sequence >
+                    <xsd:element name="CesaHouseholdOrganization" maxOccurs="unbounded" minOccurs="0" type="xsdLocal1:CesaHouseholdOrganization" />
+                </xsd:sequence >
+            </xsd:complexType >
+            <xsd:complexType name="CesaHouseholdOrganization" >
+                <xsd:sequence >
+                    <xsd:element name="HouseholdOrganization" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                </xsd:sequence >
+            </xsd:complexType >
+            <xsd:complexType name="ListOfCESAHouseholdInterface_Organization" >
+                <xsd:sequence >
+                    <xsd:element name="CESAHouseholdInterface_Organization" maxOccurs="unbounded" minOccurs="0"
+                                 type="xsdLocal1:CESAHouseholdInterface_Organization" />
+                </xsd:sequence >
+            </xsd:complexType >
+            <xsd:complexType name="CESAHouseholdInterface_Organization" >
+                <xsd:sequence >
+                    <xsd:element name="HouseholdPrimaryOrg" maxOccurs="1"
+                                 minOccurs="0" type="xsd:string" />
+                </xsd:sequence >
+            </xsd:complexType >
+            <xsd:complexType name="ListOfCesaHouseholdPosition" >
+                <xsd:sequence >
+                    <xsd:element name="CesaHouseholdPosition" maxOccurs="unbounded" minOccurs="0"
+                                 type="xsdLocal1:CesaHouseholdPosition" />
+                </xsd:sequence >
+            </xsd:complexType >
+            <xsd:complexType name="CesaHouseholdPosition" >
+                <xsd:sequence >
+                    <xsd:element name="Division" maxOccurs="1" minOccurs="0" type="xsd:string" >
+                    </xsd:element >
+                    <xsd:element name="HouseholdPosition" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                </xsd:sequence >
+            </xsd:complexType >
+            <xsd:complexType name="ListOfCESAHouseholdInterface_Position" >
+                <xsd:sequence >
+                    <xsd:element name="CESAHouseholdInterface_Position" maxOccurs="unbounded" minOccurs="0" type="xsdLocal1:CESAHouseholdInterface_Position" />
+                </xsd:sequence >
+            </xsd:complexType >
+            <xsd:complexType
+                    name="CESAHouseholdInterface_Position" >
+                <xsd:sequence >
+                    <xsd:element name="Position" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="PositionDivision" maxOccurs="1" minOccurs="0" type="xsd:string" >
+                    </xsd:element >
+                </xsd:sequence >
+            </xsd:complexType >
+            <xsd:complexType name="ListOfCesaFamilyAddressInterface" >
+                <xsd:sequence >
+                    <xsd:element name="CesaFamilyAddressInterface" maxOccurs="unbounded" minOccurs="0"
+                                 type="xsdLocal1:CesaFamilyAddressInterface" />
+                </xsd:sequence >
+            </xsd:complexType >
+            <xsd:complexType name="CesaFamilyAddressInterface" >
+                <xsd:sequence >
+                    <xsd:element name="AddressType" maxOccurs="1" minOccurs="0"
+                                 type="xsd:string" />
+                    <xsd:element name="CESAAddrDescription" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="CESAAddressLine1" maxOccurs="1" minOccurs="0" type="xsd:string" >
+                    </xsd:element
+                    >
+                    <xsd:element name="CESAAddressLine2" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="CESAAddressLine3" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="CESACountry"
+                                 maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="CESAHundred" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="CESALotPortionorRMBNumber" maxOccurs="1" minOccurs="0"
+                                 type="xsd:string" />
+                    <xsd:element name="CESAMailingTitleName" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="CESAMailingTitleSalutation" maxOccurs="1" minOccurs="0" type="xsd:string" >
+                    </xsd:element >
+                    <xsd:element name="CESANearestCrossRoad" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="CESAPostCode" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element
+                            name="CESASection" maxOccurs="1" minOccurs="0" type="xsd:string" >
+                    </xsd:element >
+                    <xsd:element name="CESAState" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="CESAUnitFlatNumber" maxOccurs="1"
+                                 minOccurs="0" type="xsd:string" />
+                    <xsd:element name="City" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="CESABillingFlag" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="CESACorrespondenceFlag" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="CESAActiveAddressFlg" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element
+                            name="CESAResidentialFlag" maxOccurs="1" minOccurs="0" type="xsd:string" >
+                    </xsd:element >
+                </xsd:sequence >
+            </xsd:complexType >
+            <xsd:complexType name="ListOfCesaSchoolInterfaceFamilyParent" >
+                <xsd:sequence >
+                    <xsd:element
+                            name="CesaSchoolInterfaceFamilyParent" maxOccurs="unbounded" minOccurs="0" type="xsdLocal1:CesaSchoolInterfaceFamilyParent" >
+                    </xsd:element >
+                </xsd:sequence >
+            </xsd:complexType >
+            <xsd:complexType name="CesaSchoolInterfaceFamilyParent" >
+                <xsd:sequence >
+                    <xsd:element name="AccountName" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                </xsd:sequence >
+            </xsd:complexType >
+            <xsd:complexType name="ListOfCESAFamilyParentInterface_Account" >
+                <xsd:sequence >
+                    <xsd:element name="CESAFamilyParentInterface_Account" maxOccurs="unbounded" minOccurs="0" type="xsdLocal1:CESAFamilyParentInterface_Account" />
+                </xsd:sequence >
+            </xsd:complexType >
+            <xsd:complexType
+                    name="CESAFamilyParentInterface_Account" >
+                <xsd:sequence >
+                    <xsd:element name="Account" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                </xsd:sequence >
+            </xsd:complexType >
+            <xsd:complexType
+                    name="ListOfCesaBillingContactOrganization" >
+                <xsd:sequence >
+                    <xsd:element name="CesaBillingContactOrganization" maxOccurs="unbounded" minOccurs="0" type="xsdLocal1:CesaBillingContactOrganization" />
+                </xsd:sequence >
+            </xsd:complexType >
+            <xsd:complexType name="CesaBillingContactOrganization" >
+                <xsd:sequence >
+                    <xsd:element name="BillingContactOrganisation" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                </xsd:sequence >
+            </xsd:complexType
+            >
+            <xsd:complexType name="ListOfCESAFamilyParentInterface_Organization" >
+                <xsd:sequence >
+                    <xsd:element name="CESAFamilyParentInterface_Organization" maxOccurs="unbounded" minOccurs="0"
+                                 type="xsdLocal1:CESAFamilyParentInterface_Organization" />
+                </xsd:sequence >
+            </xsd:complexType >
+            <xsd:complexType name="CESAFamilyParentInterface_Organization" >
+                <xsd:sequence >
+                    <xsd:element name="OrganisationName"
+                                 maxOccurs="1" minOccurs="0" type="xsd:string" />
+                </xsd:sequence >
+            </xsd:complexType >
+            <xsd:complexType name="ListOfCesaBillingContactPosition" >
+                <xsd:sequence >
+                    <xsd:element name="CesaBillingContactPosition"
+                                 maxOccurs="unbounded" minOccurs="0" type="xsdLocal1:CesaBillingContactPosition" />
+                </xsd:sequence >
+            </xsd:complexType >
+            <xsd:complexType name="CesaBillingContactPosition" >
+                <xsd:sequence >
+                    <xsd:element name="Division"
+                                 maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="BillingContactPosition" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                </xsd:sequence >
+            </xsd:complexType >
+            <xsd:complexType
+                    name="ListOfCESAFamilyParentInterface_Position" >
+                <xsd:sequence >
+                    <xsd:element name="CESAFamilyParentInterface_Position" maxOccurs="unbounded" minOccurs="0" type="xsdLocal1:CESAFamilyParentInterface_Position" />
+                </xsd:sequence >
+            </xsd:complexType >
+            <xsd:complexType name="CESAFamilyParentInterface_Position" >
+                <xsd:sequence >
+                    <xsd:element name="Position" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="Division"
+                                 maxOccurs="1" minOccurs="0" type="xsd:string" />
+                </xsd:sequence >
+            </xsd:complexType >
+            <xsd:complexType name="ListOfCesaParentAddressInterface" >
+                <xsd:sequence >
+                    <xsd:element name="CesaParentAddressInterface"
+                                 maxOccurs="unbounded" minOccurs="0" type="xsdLocal1:CesaParentAddressInterface" />
+                </xsd:sequence >
+            </xsd:complexType >
+            <xsd:complexType name="CesaParentAddressInterface" >
+                <xsd:sequence >
+                    <xsd:element name="ConflictId"
+                                 maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="AddressType" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="CESAAddrDescription" maxOccurs="1" minOccurs="0"
+                                 type="xsd:string" />
+                    <xsd:element name="CESAAddressLine1" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="CESAAddressLine2" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="CESAAddressLine3" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="CESACountry" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="CESAHundred"
+                                 maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="CESALotPortionorRMBNumber" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="CESAMailingTitleName" maxOccurs="1"
+                                 minOccurs="0" type="xsd:string" />
+                    <xsd:element name="CESAMailingTitleSalutation" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="CESANearestCrossRoad" maxOccurs="1" minOccurs="0"
+                                 type="xsd:string" />
+                    <xsd:element name="CESAPostCode" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="CESASection" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="CESAState" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="CESAUnitFlatNumber" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="City" maxOccurs="1"
+                                 minOccurs="0" type="xsd:string" />
+                    <xsd:element name="CESAResidentialFlag" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="CESACorrespondenceFlag" maxOccurs="1" minOccurs="0"
+                                 type="xsd:string" />
+                    <xsd:element name="CESABillingFlag" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="CESAActiveAddressFlg" maxOccurs="1" minOccurs="0" type="xsd:string" >
+                    </xsd:element
+                    >
+                </xsd:sequence >
+            </xsd:complexType >
+            <xsd:complexType name="ListOfCESABillingAccountContactInterface_Organization" >
+                <xsd:sequence >
+                    <xsd:element name="CESABillingAccountContactInterface_Organization" maxOccurs="unbounded" minOccurs="0"
+                                 type="xsdLocal1:CESABillingAccountContactInterface_Organization" />
+                </xsd:sequence >
+            </xsd:complexType >
+            <xsd:complexType name="CESABillingAccountContactInterface_Organization" >
+                <xsd:sequence >
+                    <xsd:element
+                            name="BillingAccountContactOrg" maxOccurs="1" minOccurs="0" type="xsd:string" >
+                    </xsd:element >
+                </xsd:sequence >
+            </xsd:complexType >
+            <xsd:complexType name="ListOfCESABillingAccountContactInterface_Position" >
+                <xsd:sequence >
+                    <xsd:element
+                            name="CESABillingAccountContactInterface_Position" maxOccurs="unbounded" minOccurs="0" type="xsdLocal1:CESABillingAccountContactInterface_Position" >
+                    </xsd:element >
+                </xsd:sequence >
+            </xsd:complexType >
+            <xsd:complexType
+                    name="CESABillingAccountContactInterface_Position" >
+                <xsd:sequence >
+                    <xsd:element name="Position" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element name="Division" maxOccurs="1" minOccurs="0" type="xsd:string"
+                    />
+                </xsd:sequence >
+            </xsd:complexType >
+            <xsd:complexType name="ListOfCesaSchoolGroupOrganization" >
+                <xsd:sequence >
+                    <xsd:element name="CesaSchoolGroupOrganization" maxOccurs="unbounded" minOccurs="0"
+                                 type="xsdLocal1:CesaSchoolGroupOrganization" />
+                </xsd:sequence >
+            </xsd:complexType >
+            <xsd:complexType name="CesaSchoolGroupOrganization" >
+                <xsd:sequence >
+                    <xsd:element name="GroupOrganisation" maxOccurs="1" minOccurs="0"
+                                 type="xsd:string" />
+                </xsd:sequence >
+            </xsd:complexType >
+            <xsd:complexType name="ListOfCesaSchoolGroupPosition" >
+                <xsd:sequence >
+                    <xsd:element name="CesaSchoolGroupPosition" maxOccurs="unbounded" minOccurs="0"
+                                 type="xsdLocal1:CesaSchoolGroupPosition" />
+                </xsd:sequence >
+            </xsd:complexType >
+            <xsd:complexType name="CesaSchoolGroupPosition" >
+                <xsd:sequence >
+                    <xsd:element name="Division" maxOccurs="1" minOccurs="0" type="xsd:string" >
+                    </xsd:element >
+                    <xsd:element name="GroupPosition" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                </xsd:sequence >
+            </xsd:complexType >
+            <xsd:complexType name="ListOfCESASchoolGroupsInterface_Organisation" >
+                <xsd:sequence >
+                    <xsd:element name="CESASchoolGroupsInterface_Organisation" maxOccurs="unbounded" minOccurs="0" type="xsdLocal1:CESASchoolGroupsInterface_Organisation" />
+                </xsd:sequence >
+            </xsd:complexType >
+            <xsd:complexType
+                    name="CESASchoolGroupsInterface_Organisation" >
+                <xsd:sequence >
+                    <xsd:element name="PrimaryGrpOrg" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                </xsd:sequence >
+            </xsd:complexType >
+            <xsd:complexType
+                    name="ListOfCESASchoolGroupsInterface_Position" >
+                <xsd:sequence >
+                    <xsd:element name="CESASchoolGroupsInterface_Position" maxOccurs="unbounded" minOccurs="0" type="xsdLocal1:CESASchoolGroupsInterface_Position" />
+                </xsd:sequence >
+            </xsd:complexType >
+            <xsd:complexType name="CESASchoolGroupsInterface_Position" >
+                <xsd:sequence >
+                    <xsd:element name="PrimaryGrPosition" maxOccurs="1" minOccurs="0" type="xsd:string" />
+                    <xsd:element
+                            name="Division" maxOccurs="1" minOccurs="0" type="xsd:string" >
+                    </xsd:element >
+                </xsd:sequence >
+            </xsd:complexType >
+        </xsd:schema >
+        <xsd:schema elementFormDefault="qualified" attributeFormDefault="unqualified" targetNamespace="
+http://siebel.com/Student/Outbound/Update" xmlns:xsd="http://www.w3.org/2001/XMLSchema" >
+            <xsd:complexType name="CustomHeaderContextType" >
+                <xsd:sequence >
+                    <xsd:any />
+                </xsd:sequence >
+            </xsd:complexType >
+            <xsd:complexType
+                    name="_XMLHierarchyOutputType" >
+                <xsd:sequence >
+                    <xsd:any />
+                </xsd:sequence >
+            </xsd:complexType >
+        </xsd:schema >
+    </types >
+    <message name="studentOutboundUpdate_Input" >
+        <part name="CustomHeaderContext"
+              type="tns:CustomHeaderContextType" />
+        <part name="Process_spcInstance_spcId" type="xsd:string" />
+        <part name="Object_spcId" type="xsd:string" />
+        <part name="Siebel_spcOperation_spcObject_spcId" type="xsd:string" >
+        </part >
+        <part name="StudentOutbound" type="xsdLocal1:CesaSchoolInterfaceTopElmt" />
+        <part name="AccountId" type="xsd:string" />
+        <part name="ContactId" type="xsd:string" />
+        <part name="CUID" type="xsd:string" >
+        </part
+        >
+        <part name="Error_spcCode" type="xsd:string" />
+        <part name="Error_spcMessage" type="xsd:string" />
+    </message >
+    <message name="studentOutboundUpdate_Output" >
+        <part name="Process_spcInstance_spcId" type="xsd:string" >
+        </part
+        >
+        <part name="faultactor" type="xsd:string" />
+        <part name="CustomHeaderContext" type="tns:CustomHeaderContextType" />
+        <part name="_XMLHierarchyOutput" type="tns:_XMLHierarchyOutputType" />
+        <part name="Object_spcId"
+              type="xsd:string" />
+        <part name="Siebel_spcOperation_spcObject_spcId" type="xsd:string" />
+        <part name="faultcode" type="xsd:string" />
+        <part name="AccountId" type="xsd:string" />
+        <part name="ContactId"
+              type="xsd:string" />
+        <part name="CUID" type="xsd:string" />
+        <part name="Error_spcCode" type="xsd:string" />
+        <part name="faultstring" type="xsd:string" />
+        <part name="Error_spcMessage" type="xsd:string" >
+        </part
+        >
+    </message >
+    <portType name="CESA_spcOutbound_spcStudent_spcUpdate" >
+        <operation name="studentOutboundUpdate" >
+            <input message="tns:studentOutboundUpdate_Input" />
+            <output message="tns:studentOutboundUpdate_Output" />
+        </operation >
+    </portType >
+    <binding name="CESA_spcOutbound_spcStudent_spcUpdate" type="tns:CESA_spcOutbound_spcStudent_spcUpdate" >
+        <soap:binding transport="http://schemas.xmlsoap.org/soap/http" style="rpc" />
+        <operation
+                name="studentOutboundUpdate" >
+            <soap:operation soapAction="rpc/http://siebel.com/Student/Outbound/Update:studentOutboundUpdate" />
+            <input >
+                <soap:body namespace="http://siebel.com/Student/Outbound/Update" use="literal"
+                />
+            </input >
+            <output >
+                <soap:body namespace="http://siebel.com/Student/Outbound/Update" use="literal" />
+            </output >
+        </operation >
+    </binding >
+    <service name="CESA_spcOutbound_spcStudent_spcUpdate" >
+        <port
+                binding="tns:CESA_spcOutbound_spcStudent_spcUpdate" name="CESA_spcOutbound_spcStudent_spcUpdate" >
+            <soap:address location="http://osb-app-trn-01.icesa.catholic.edu.au:8001/SISOutboundServices/proxy/StudentOutbound" />
+        </port >
+    </service >
+</definitions >

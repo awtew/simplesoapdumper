@@ -1,0 +1,24 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:upd="http://siebel.com/Student/Outbound/Update">
+    <soapenv:Header/>
+    <soapenv:Body>
+        <upd:studentOutboundUpdateResponse>
+            <Process_spcInstance_spcId></Process_spcInstance_spcId>
+            <faultactor></faultactor>
+            <CustomHeaderContext>
+                <!--You may enter ANY elements at this point-->
+            </CustomHeaderContext>
+            <_XMLHierarchyOutput>
+                <!--You may enter ANY elements at this point-->
+            </_XMLHierarchyOutput>
+            <Object_spcId>?</Object_spcId>
+            <Siebel_spcOperation_spcObject_spcId></Siebel_spcOperation_spcObject_spcId>
+            <faultcode></faultcode>
+            <AccountId></AccountId>
+            <ContactId></ContactId>
+            <CUID>?</CUID>
+            <Error_spcCode>success</Error_spcCode>
+            <faultstring></faultstring>
+            <Error_spcMessage></Error_spcMessage>
+        </upd:studentOutboundUpdateResponse>
+    </soapenv:Body>
+</soapenv:Envelope>
